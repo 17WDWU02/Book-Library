@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>View Books</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div class="container">
+
+            <nav class="navbar  navbar-inverse">
+              <div class="container-fluid">
+
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="./index.html">Book Library</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav">
+                    <li><a href="index.html">View Book</a></li>
+                    <li><a href="authors.html">View Authors</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+            <h1>Add Books</h1>
+            <hr>
+            <form action="book.html" method="post">
+                <div class="form-group">
+                    <label for="title">Book Title</label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="">
+                </div>
+                <div class="form-group">
+                    <label for="year">Year Released</label>
+                    <input type="number" class="form-control" id="year" name="year" placeholder="Year" value="">
+                </div>
+                <div class="form-group">
+                    <label for="author">Author</label><br>
+                        <label class="radio-inline"><input type="radio" name="authorid" value="1">J K Rowling</label>
+                    <br>
+                    <button type="button" name="button" id="addNewAuthor" class="btn btn-link">add new author</button>
+                    <input type="text" class="form-control" id="author" name="author" placeholder="Author" value="">
+                </div>
+                <div class="form-group">
+                    <label for="description">Book Description</label>
+                    <textarea name="description" rows="8" cols="80" class="form-control" placeholder="Description of Book"></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" name="button">Add Book</button>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+    </body>
+</html>
